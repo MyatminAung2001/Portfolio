@@ -12,6 +12,7 @@ const About = () => {
     const [abouts, setAbouts] = useState([]);
     const [skills, setSkills] = useState([]);
 
+    /** Fetch About section from Sanity CMS */
     useEffect(() => {
         const query = '*[_type == "abouts"]';
 

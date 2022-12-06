@@ -15,6 +15,7 @@ const Projects = () => {
 
     const [projects, setProjects] = useState([]);
 
+    /** Fetch Projects from Sanity CMS */
     useEffect(() => {
         const query = '*[_type == "projects"]';
 
